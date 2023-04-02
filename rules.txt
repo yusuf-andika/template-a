@@ -1,0 +1,62 @@
+Aplikasi Penjadwalan Mata Pelajaran SD Negeri 17 Palembang
+Budget	    : Rp. 2.000.000
+DP		    : Rp.   200.000
+Sisa		: Rp. 1.800.000
+Client.     : Tiara
+
+User : Admin dan Guru
+
+Admin
+- Kelola jadwal mata pelajaran
+- Kelola akun
+- Kelola data guru (pns dan honorer)
+- Kelola data kelas
+
+Guru
+- Cek Jadwal
+- Edit Akun
+
+Perancangan Database
+- Table User
+    - id
+    - username
+    - password
+    - nama
+    - status
+- Table Mapel
+    - id
+    - kode_mapel
+    - ket
+    - status
+- Table Jam Pelajaran
+    - id
+    - kode_jp
+    - ket
+    - status
+- Table Hari
+    - id
+    - kode_hari
+    - ket
+- Table Guru
+    - id
+    - kode_guru
+    - nama_guru
+    - no_induk
+    - golongan
+    - jabatan
+    - jenis
+    - status
+- Table Kelas
+    - id
+    - kode_kelas
+    - ket
+    - status
+- Table Penjadwalan
+    - id
+    - kode_penjadwalan
+    - kode_kelas
+    - kode_hari
+    - kode_jp
+    - kode_mapel
+    - kode_guru
+    - Status
